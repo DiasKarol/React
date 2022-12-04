@@ -1,0 +1,45 @@
+.modal {
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #565656;
+}
+
+.contentModal {
+    width: 500px;
+    height: auto;
+    background-color: #111;
+}
+
+.headerModal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5px;
+
+}
+
+.titleH2 {
+    color: aliceblue;
+    padding: 10px;
+}
+
+.button {
+    background-color: #111;
+    border: none;
+    color: #eee;
+}
+
+.bodyModal {
+    color: #eee;
+    padding: 10px;
+    background-color: #202020;
+    border: 1px #eee;
+}
