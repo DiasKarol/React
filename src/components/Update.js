@@ -1,4 +1,4 @@
-async function register() {
+async function updateUser() {
 
     const body = {
         username: document.getElementById("name").value,
@@ -16,7 +16,7 @@ async function register() {
         body: JSON.stringify(body)
     };
 
-    await fetch("http://localhost:8000/users/", options)
+    await fetch("http://localhost:8000/users/:user_id", options)
         .then(response => {
             if (response.status === 202) {
                 return response.json();
@@ -29,4 +29,4 @@ async function register() {
         
 }
 
-export { register };
+export { updateUser };

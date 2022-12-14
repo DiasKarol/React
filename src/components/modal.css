@@ -38,6 +38,7 @@
 }
 
 .bodyModal {
+    display: flex;
     color: #eee;
     padding: 10px;
     background-color: #202020;

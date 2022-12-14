@@ -1,6 +1,10 @@
-import React from 'react'; 
+import React from 'react';
+//import { token } from './login';
 
-const Modal = props => {
+export function Modal(props) {
+
+    //const {username} = useContext(token)
+
     if (!props.show) {
         return null
     }
@@ -9,16 +13,14 @@ const Modal = props => {
         <div className='modal' onClick={props.onClose}>
             <div className='contentModal' onClick={e => e.stopPropagation()}>
                 <div className='headerModal'>
-                    <h2 className='titleH2'>Informações</h2>
+                    <p>{props.acao} realizado com sucesso!</p>
                     <button onClick={props.onClose} className='button'>X</button>
                 </div>
                 <div className='bodyModal'>
-                    <p className='titleH2'>Incluirei as informações futuramente aqui</p>
+                    <p>{props.message}</p>
                 </div>
             </div>
         </div>
         
     )
 }
-
-export {Modal}

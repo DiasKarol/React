@@ -9,3 +9,19 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.links {
+  font-size: 0.8rem;
+  color: #DCDCDC;
+  background-color: #111;
+  border: none;
+  width: 80px;
+  height: 25px;
+  padding: 5px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.links:hover{
+  color: #659;
+}

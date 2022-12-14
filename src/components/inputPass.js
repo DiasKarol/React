@@ -1,11 +1,12 @@
 import React from 'react';
 import formData from 'react-formdata';
+import { Inputs } from './styleComponents';
 
 var InputPass = formData(function ({ ocHook }) {
     return (
         <>
-            <input
-                id='name'
+            <Inputs
+                id="name"
                 type="text"
                 name="Nome"
                 placeholder="Nome"
@@ -13,8 +14,8 @@ var InputPass = formData(function ({ ocHook }) {
                 onChange={ocHook}
                 required
             />
-            <input
-                id='email'
+            <Inputs
+                id="email"
                 type="email"
                 name="Email"
                 placeholder="E-mail"
@@ -22,12 +23,30 @@ var InputPass = formData(function ({ ocHook }) {
                 onChange={ocHook}
                 required
             />
-            <input
-                id='password'
+            <Inputs
+                id="password"
                 type="password"
                 name="Senha"
                 placeholder="Senha"
                 pattern="/^\w{1,}$/gim"
+                onChange={ocHook}
+                required
+            />
+            <Inputs
+                id="firstName"
+                type="text"
+                name="Primeiro Nome"
+                placeholder="Primeiro nome"
+                pattern="/^[a-z]{3,}$/gim"
+                onChange={ocHook}
+                required
+            />
+            <Inputs
+                id="lastName"
+                type="text"
+                name="Sobrenome"
+                placeholder="Sobrenome"
+                pattern="/^[a-z]{3,}$/gim"
                 onChange={ocHook}
                 required
             />
